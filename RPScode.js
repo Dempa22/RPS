@@ -58,6 +58,18 @@ function playRound() {
 }
 for (let i = 0; i < 5; i++) {
     playRound();
+    
+    if (i === 4 && humanScore > computerScore) {
+        console.log("YAY, you beat the computer!")
+    } else if (i === 4 && humanScore < computerScore) {
+        console.log("LOOSER!")
+    }else if (i === 4 && humanScore === computerScore)  {
+        console.log("Nobody won. BORING!")
+    } else {
+        console.log()
+    }
+
+    
 }
  
 }
